@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="../imagenes/juego-terminado.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>VideoGame Page</title>
+</head>
+
+<body>
+    <header class="header__image">
+        <div class="header__socialMedia">
+            <ul class="header__socialMedia--nav">
+                <li>
+                    <a href="https://www.facebook.com/login/">
+                        <img src="../imagenes/facebook.png" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <img src="../imagenes/twitter.png" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com">
+                        <img src="../imagenes/instagram.png" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com">
+                        <img src="../imagenes/youtube.png" alt="youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header__logoTittle">
+            <img src="../imagenes/Kingdom.png" alt="logo-titulo" class="header__logoTittle--img">
+
+        </div>
+
+        <div class="header__nav">
+            <nav>
+                <ul class="header__nav--main">
+                    <li class="element__list--navMain"><a href="../index.html">Inicio</a></li>
+                    <li class="element__list--navMain"><a href="../secciones/mas-vendidos.html">Más vendidos</a></li>
+                    <li class="element__list--navMain"><a href="../secciones/plataformas.html">Plataformas</a>
+                        <ul>
+                            <li><a href="../secciones/plataformas.html#PC">PC</a></li>
+                            <li><a href="../secciones/plataformas.html#PS5">PS5</a></li>
+                            <li><a href="../secciones/plataformas.html#XBOX">XBOX</a></li>
+                            <li><a href="../secciones/plataformas.html#SWITCH">Nintendo Switch</a></li>
+                        </ul>
+                    </li>
+                    <li class="element__list--navMain"><a href="../secciones/ofertas-gratuitos.html">Ofertas y gratuitos
+                        </a></li>
+                    <li class="element__list--navMain"><a href="../secciones/contactanos.html">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__separador">
+            <img src="/imagenes/SEPARADOR.png" alt="separador" class="header__separador--img">
+            <img src="imagenes/separador-mobile.png" alt="separador-mobile" class="header__separador--imgMobile">
+        </div>
+
+    </header>
+
+    <section id="section__contactanos">
+        <h2 class="section__h2">CONTÁCTANOS</h2>
+        <div class="section__container">
+            <div class="section__image--contact"></div>
+            <div class="section__form">
+                <form action="" method="get" enctype="multipart/form-data">
+                    <input type="text" name="nombre" id="nombre">
+                    <br>
+                    <input type="text" name="apellidos" id="apellidos">
+                    <br>
+                    <input type="email" name="email" id="email">
+                    <br>
+                    <div class="container__asunto">
+                        <label for="asunto" class="label__asuntoMensaje">Asunto: </label>
+                        <select name="asunto" id="asunto">
+                            <option value="publicidad">Publicidad</option>
+                            <option value="informacion">Información</option>
+                            <option value="recomendación">Recomendación</option>
+                            <option value="otro">Otros</option>
+                        </select>
+                    </div>
+                    <br>
+                    <label for="mensaje" class="label__asuntoMensaje">Mensaje: </label>
+                    <br>
+                    <textarea cols="40" rows="10" id="form__textArea"></textarea>
+                    <br>
+                    <input type="reset" value="LIMPIAR CAMPOS" id="btn__limpiar">
+                    <input type="submit" value="ENVIAR FORMULARIO" name="mensaje" id="btn__enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__logoTittle">
+            <img src="../imagenes/Kingdom-footer.png" alt="logo-titulo">
+        </div>
+        <div class="footer__contributions">
+            <p>¿Me invitas una hamburguesa? ;)</p>
+        </div>
+        <p class="footer__message">2023 - Desarrollado en mi curso de desarrollo web</p>
+    </footer>
+</body>
+
+</html>

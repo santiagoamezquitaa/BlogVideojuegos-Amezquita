@@ -1,0 +1,809 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	overflow-x: hidden;
+    background-color: #C2E3E4;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../font/RobotoMono-VariableFont_wght.ttf');
+}
+
+#grid {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "section aside"
+        "footer footer";
+    grid-template-columns: 56.5% auto;
+    grid-template-rows: 740px auto 189px;
+    grid-column-gap: 98px;
+}
+
+.header__image{
+    grid-area: header;
+    background-image: url('../imagenes/zelda-paisaje.png');
+    height: 70.2rem;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.header__socialMedia {
+    background-color: #4F8A8B;
+    height: 40px;
+    padding-top: 7px;
+}
+
+.header__socialMedia--nav {
+    background-color: #FFCB74;
+    height: 32px;
+    width: 153px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;    
+    margin-right: 82px;
+    margin-left: auto;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+}
+
+.header__logoTittle {
+    text-align: center;
+    margin-top: 68px;
+    margin-bottom: 25px;
+}
+
+.header__nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 744px;
+    height: 36px;
+    text-align: center;
+    background-color: #4F8A8B;
+    font-family: 'Oswald';
+    font-size: 1.4rem;
+    position: sticky;
+    top: 20px;
+    border-radius: 14px;
+}
+
+
+.header__nav--main {
+    list-style: none;
+    font-size: 0;
+}
+
+.element__list--navMain {
+    display: inline-block;
+    width: 14.4rem;
+    position: relative;
+    font-size: 2rem;
+}
+
+.header__separador {
+    margin-top: 15.2rem;
+    height: 13.7rem;
+}
+
+.header__separador--img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.header__separador--imgMobile {
+    display: none;
+}
+
+.header__nav--main ul {
+    position: relative;
+    display: none;
+}
+
+.header__nav--main ul li {
+    display: block;
+    width: 14.4rem;
+}
+
+.header__nav--main li:hover ul {
+    position: absolute;
+    display: block;
+    background-color: #4F8A8B;
+}
+
+.header__nav--main li a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    font-family: 'RobotoMono';
+    font-weight: bold;    
+    font-size: 2.4rem;
+}
+
+.section__index{
+    grid-area: section;
+    width: 552px;
+    margin: 41px 48px 107px auto;
+}
+
+.section__image--index {
+    background-image: url('../imagenes/capcom.png');
+    width: 264px;
+    height: 167px;
+    margin-top: 72px;
+    border-radius: 14px;
+}
+
+.section__description--index{
+    width: 243px;
+    height: 152px;
+    border-radius: 14px;
+    background-color: #F4F6FF;
+    margin-top: 72px;
+    margin-left: auto;
+    padding-left: 21px;
+    padding-top: 15px;
+}
+
+.section__h3--index {
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: auto;
+}
+
+.section__p--index {
+    font-size: 1.1rem;
+    margin-top: 6px;
+    margin-right: 33px;
+}
+
+.aside__index {
+    grid-area: aside;
+    width: 290px;
+    margin-left: 48px;
+    margin-right: auto;
+    margin-top: 41px;
+}
+
+.aside__container--index {
+    background-color: #FFCB74;
+    width: 229px;
+    border-radius: 14px;
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+
+.aside__ranking {
+    width: 189px;
+    height: 110px;
+    background-color: #f4f4f4;
+    border-radius: 14px;
+    padding: 7px 20px 7px 20px;
+    margin-top: 10px;
+}
+
+.aside__ol {
+    font-size: 1.1rem;
+    line-height: 26px;
+    margin-top: 9px;
+    list-style: none;
+}
+
+.ol__bullet--top1 {
+    background-image: url('../imagenes/medalla-de-oro.png');
+    background-position: 0 50%;
+    padding-left: 3rem;
+	background-size: 2rem 2 rem;
+	background-repeat: no-repeat;    
+}
+
+.ol__bullet--top2 {
+    background-image: url('../imagenes/medalla-de-plata.png');
+    background-position: 0 50%;
+    padding-left: 3rem;
+	background-size: 2rem 2 rem;
+	background-repeat: no-repeat;    
+}
+
+.ol__bullet--top3 {
+    background-image: url('../imagenes/medalla-de-bronce.png');
+    background-position: 0 50%;
+    padding-left: 3rem;
+	background-size: 2rem 2 rem;
+	background-repeat: no-repeat;    
+}
+
+.aside__h3--ranking {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+footer {
+    grid-area: footer;
+    width: auto;
+    height: 190px;
+    background-color: #4F8A8B;    
+    border: 3px;
+    border-style: solid;
+}
+
+.footer__logoTittle {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__contributions {
+    margin-left: auto;
+    margin-right: auto;
+    width: 175px;
+    height: 28px;
+    background-color: #EA907A;
+    text-align: center;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    font-size: 0.9rem;    
+    border: 2px;
+    border-style: solid;
+}
+
+.footer__message {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: aliceblue;
+}
+
+ /* SECCION: MAS VENDIDOS */
+
+#section__masVendidos {
+    width: 884px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 41px;
+    margin-bottom: 107px;
+}
+
+.section__h2{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.section__container {
+    display: flex;
+}
+
+.section__video {
+    width: 367px;
+    height: 232px;
+    display: inline-block;
+    border-radius: 14px;
+    margin-top: 72px;
+}
+
+.section__description--masVendidos{
+    width: 436px;
+    height: 203px;
+    border-radius: 14px;
+    background-color: #F4F6FF;
+    margin-top: 72px;
+    margin-left: auto;
+    padding-left: 38px;
+    padding-top: 29px;
+}
+
+h3 {
+    font-family: 'RobotoMono';
+    font-weight: bold;  
+}
+
+.section__h3--masVendidos {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.section__p--masVendidos {
+    font-size: 1.5rem;
+    margin-top: 23px;
+    margin-right: 62px;
+}
+
+.section__precio {
+    background-color: #FFCB74;
+    width: 108px;
+    height: 27px;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.section__p--masVendidos--precio {
+    font-size: 1.5rem;
+    margin-top: 23px;
+    text-align: center;
+}
+
+ /* SECCION: PLATAFORMAS */
+
+ #section__plataformas {
+    width: 941px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 41px;
+    margin-bottom: 107px;
+}
+
+.section__h2--plataformas {
+    margin-top: 60px;
+    text-align: left;
+}
+
+.section__image--plataformas {
+    background-image: url('../imagenes/amd_promo.png');
+    width: 441px;
+    height: 280px;
+    margin-top: 72px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.section__description--plataformas {
+    width: 460px;
+    height: 280px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background-color: #F4F6FF;
+    margin-top: 72px;
+    padding-left: 40px;
+}
+
+.section__h3--plataformas {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 79px;
+    width: 381px;
+    height: 70px;
+}
+
+.section__p--plataformas {
+    font-size: 1.5rem;
+    margin-top: 8px;
+    margin-right: 20px;
+    margin-bottom: 21px;
+    width: 440px;
+    height: 144px;
+}
+
+.section__fecha {
+    background-color: #FFCB74;
+    width: 73px;
+    height: 23px;
+    border-radius: 6px;
+    margin: 6px 6px 8px auto;
+}
+
+.section__p--plataformas--fecha {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.section__description--plataformas--reverse {
+    width: 460px;
+    height: 280px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    background-color: #F4F6FF;
+    margin-top: 72px;
+    padding-left: 40px;
+}
+
+.section__image--plataformas--reverse {
+    background-image: url('../imagenes/amd_promo.png');
+    width: 441px;
+    height: 280px;
+    margin-top: 72px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+/* Seccion ofertas y gratuitos */
+
+#grid__ofertasGratuitos {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "section aside"
+        "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 740px auto 189px;
+}
+
+.section__ofertas {
+    grid-area: section;
+    width: 363px;
+    margin-top: 41px;
+    margin-bottom: 107px;
+    margin-left: auto;
+    margin-right: 83px;
+}
+
+.container__ofertasGratuitos {
+    background-color: #4F8A8B;
+    width: 343px;
+    border-radius: 14px;
+    margin-top: 70px;
+    padding: 10px 10px 10px 10px;
+}
+
+.section__image--ofertas {
+    background-image: url('../imagenes/fifa23.png');
+    width: 343px;
+    height: 217px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    margin-top: 10px;
+}
+
+.section__description--ofertas {
+    display: flex;
+    background-color: #f4f4f4;
+    width: 313px;
+    height: 23px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    padding: 9px 15px 9px 15px;
+}
+
+.section__p--ofertas {
+    width: 73px;
+    height: 23px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.section__sale {
+    width: 125px;
+    height: 23px;
+    background-color: #FFCB74;
+    border-radius: 6px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.section__p--sale {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.aside__gratuitos {
+    grid-area: aside;
+    width: 363px;
+    margin-top: 41px;
+    margin-bottom: 107px;
+    margin-right: auto;
+    margin-left: 83px;
+}
+
+.aside__description--gratuitos {
+    display: flex;
+    background-color: #FFCB74;
+    width: 313px;
+    height: 23px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    padding: 9px 15px 9px 15px;
+}
+
+.aside__p--gratuitos {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.aside__image--gratuitos {
+    background-image: url('../imagenes/fortnite.png');
+    width: 343px;
+    height: 217px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    margin-top: 10px;
+}
+
+/* SECCION: CONTACTANOS */
+
+#section__contactanos {
+    width: 943px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 41px;
+    margin-bottom: 107px;
+}
+
+.section__image--contact {
+    background-image: url('../imagenes/email.png');
+    width: 512px;
+    height: 512px;
+    margin-top: 110px;
+}
+
+.section__form{
+    margin-left: auto;
+    margin-top: 110px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#nombre {
+    background-color: #FFCB74;
+    width: 348px;
+    height: 40px;
+    border-radius: 14px;
+    border-style: none;
+}
+
+#apellidos {
+    background-color: #FFCB74;
+    width: 348px;
+    height: 40px;
+    border-radius: 14px;
+    margin-top: 20px;
+    border-style: none;
+}
+
+#email {
+    background-color: #FFCB74;
+    width: 348px;
+    height: 40px;
+    border-radius: 14px;
+    margin-top: 20px;
+    border-style: none;
+}
+
+.container__asunto {
+    margin-top: 20px;
+}
+
+.label__asuntoMensaje {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 18px;
+}
+
+#asunto {
+    background-color: #FFCB74;
+    width: 227px;
+    height: 40px;
+    border-radius: 14px;
+    margin-left: auto;
+    border-style: none;
+}
+
+#form__textArea {
+    background-color: #FFCB74;
+    width: 348px;
+    height: 203px;
+    border-radius: 14px;
+    border-style: none;
+}
+
+#btn__limpiar {
+    width: 160px;
+    height: 30px;
+    border-radius: 14px;
+    background-color: #EA907A;
+    color: #f4f4f4;
+    margin-top: 20px;
+    font-weight: bold;
+    border-style: none;
+}
+
+#btn__enviar {
+    width: 160px;
+    height: 30px;
+    border-radius: 14px;
+    background-color: #EA907A;
+    color: #f4f4f4;
+    margin-top: 20px;
+    font-weight: bold;
+    border-style: none;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 375px) {
+
+    .header__image{
+        grid-area: header;
+        background-image: url('../imagenes/zelda-paisaje-mobile.png');
+        height: 41.8rem;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    .header__socialMedia--nav {
+        background-color: #FFCB74;
+        height: 32px;
+        width: 153px;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: row;    
+        margin-right: auto;
+        margin-left: 6px;
+        justify-content: space-around;
+        align-items: flex-end;
+        list-style: none;
+    }
+
+    .header__logoTittle {
+        text-align: center;
+        margin-top: 53px;
+    }
+    
+    .header__logoTittle--img{
+        width: 283px;
+        height: 108px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__separador {
+        margin-top: 14.3rem;
+        height: 7.4rem;
+    }
+
+    .header__separador--img {
+        display: none;
+    }
+    
+    .header__separador--imgMobile {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    /* INDEX */
+
+    #grid {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "section"
+            "aside"
+            "footer";
+        grid-template-columns: auto;
+        grid-template-rows: 418px auto auto 189px;
+    }
+
+    .section__index{
+        grid-area: section;
+        width: 245px;
+        margin: 28px auto 0px auto;
+    }
+
+    .section__container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .section__image--index {
+        background-image: url('../imagenes/capcom.png');
+        width: 245px;
+        height: 134px;
+        margin-top: 0px;
+        border-radius: 0px;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+    }
+    
+    .section__description--index{
+        width: 226px;
+        height: 124px;
+        background-color: #F4F6FF;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-left: 19px;
+        padding-top: 10px;
+        border-radius: 0px;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+    }   
+    
+    .section__h3--index {
+        font-size: 1.25rem;
+        font-weight: bold;
+        width: 207px;
+    }
+    
+    .section__p--index {
+        font-size: 1.1rem;
+        width: 195px;
+        height: auto;
+        margin-top: 6px;
+        margin-right: 33px;
+    }
+
+    .aside__index {
+        grid-area: aside;
+        width: 290px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    
+    .aside__container--index {
+        background-color: #FFCB74;
+        width: 229px;
+        border-radius: 14px;
+        margin-top: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 8px;
+        padding-bottom: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+    }
+    
+    /* OFERTAS Y GRATUITOS*/
+
+    #grid__ofertasGratuitos {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "section"
+            "aside"
+            "footer";
+        grid-template-columns: auto;
+        grid-template-rows: 418px auto auto 189px;
+    }
+    
+    .section__ofertas {
+        grid-area: section;
+        margin-top: 28px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section__h2{
+        margin-top: 0px;
+    }
+    
+    .container__ofertasGratuitos {
+        border-radius: 14px;
+        margin-top: 24px;
+    }
+    
+    .aside__gratuitos {
+        grid-area: aside;
+        margin-top: 61px;
+        margin-bottom: 61px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+}
