@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shorcut icon" href="../imagenes/juego-terminado.png">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>VideoGame Page</title>
 </head>
 
@@ -16,22 +17,22 @@
             <ul class="header__socialMedia--nav">
                 <li>
                     <a href="https://www.facebook.com/login/">
-                        <img src="../imagenes/facebook.png" alt="facebook">
+                        <img src="../imagenes/facebook.png" alt="facebook" class="header__socialMedia--img">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.twitter.com">
-                        <img src="../imagenes/twitter.png" alt="twitter">
+                        <img src="../imagenes/twitter.png" alt="twitter" class="header__socialMedia--img">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com">
-                        <img src="../imagenes/instagram.png" alt="instagram">
+                        <img src="../imagenes/instagram.png" alt="instagram" class="header__socialMedia--img">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com">
-                        <img src="../imagenes/youtube.png" alt="youtube">
+                        <img src="../imagenes/youtube.png" alt="youtube" class="header__socialMedia--img">
                     </a>
                 </li>
             </ul>
@@ -72,8 +73,8 @@
     <section id="section__contactanos">
         <h2 class="section__h2">CONTÁCTANOS</h2>
         <div class="section__container">
-            <div class="section__image--contact"></div>
-            <div class="section__form">
+            <div class="section__image--contact" data-aos="zoom-in"></div>
+            <div class="section__form" data-aos="zoom-in-left">
                 <form action="" method="get" enctype="multipart/form-data">
                     <input type="text" name="nombre" id="nombre">
                     <br>
@@ -111,6 +112,12 @@
         </div>
         <p class="footer__message">2023 - Desarrollado en mi curso de desarrollo web</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
