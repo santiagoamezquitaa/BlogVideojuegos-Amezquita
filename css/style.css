@@ -57,15 +57,37 @@ html{
     margin-right: 82px;
     margin-left: auto;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
     list-style: none;
+}
+
+.header__socialMedia--img {
+    border-radius: 7px;
+    margin-top: 3px;
+    transition: all 1s;
+}
+
+.header__socialMedia--img:hover {
+    background-color: #DC9D34;
 }
 
 .header__logoTittle {
     text-align: center;
     margin-top: 68px;
     margin-bottom: 25px;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 }
+
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
 
 .header__nav {
     margin-left: auto;
@@ -75,23 +97,30 @@ html{
     text-align: center;
     background-color: #4F8A8B;
     font-family: 'Oswald';
-    font-size: 1.4rem;
     position: sticky;
-    top: 20px;
+    top: 10px;
     border-radius: 14px;
 }
 
 
 .header__nav--main {
+    display: flex;
     list-style: none;
     font-size: 0;
+    justify-content: space-evenly;
 }
 
 .element__list--navMain {
-    display: inline-block;
     width: 14.4rem;
     position: relative;
     font-size: 2rem;
+    border-radius: 14px;
+    height: 36px;
+    transition: all 1s;
+}
+
+.element__list--navMain:hover {
+    background-color: #EA907A;
 }
 
 .header__separador {
@@ -117,12 +146,20 @@ html{
 .header__nav--main ul li {
     display: block;
     width: 14.4rem;
+    transition: all 1s;
+}
+
+.header__nav--main ul li:hover {
+    background-color: #EA907A;
+    border-radius: 14px;
 }
 
 .header__nav--main li:hover ul {
     position: absolute;
     display: block;
     background-color: #4F8A8B;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
 }
 
 .header__nav--main li a {

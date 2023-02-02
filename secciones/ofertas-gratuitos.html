@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shorcut icon" href="../imagenes/juego-terminado.png">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>VideoGame Page</title>
 </head>
 
@@ -17,22 +18,22 @@
                 <ul class="header__socialMedia--nav">
                     <li>
                         <a href="https://www.facebook.com/login/">
-                            <img src="../imagenes/facebook.png" alt="facebook">
+                            <img src="../imagenes/facebook.png" alt="facebook" class="header__socialMedia--img">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.twitter.com">
-                            <img src="../imagenes/twitter.png" alt="twitter">
+                            <img src="../imagenes/twitter.png" alt="twitter" class="header__socialMedia--img">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com">
-                            <img src="../imagenes/instagram.png" alt="instagram">
+                            <img src="../imagenes/instagram.png" alt="instagram" class="header__socialMedia--img">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.youtube.com">
-                            <img src="../imagenes/youtube.png" alt="youtube">
+                            <img src="../imagenes/youtube.png" alt="youtube" class="header__socialMedia--img">
                         </a>
                     </li>
                 </ul>
@@ -71,7 +72,7 @@
             <section class="section__ofertas">
                 <h2 class="section__h2">OFERTAS</h2>
                 <div class="container__ofertasGratuitos">
-                    <article>
+                    <article data-aos="zoom-out">
                         <div class="section__image--ofertas"></div>
                         <div class="section__description--ofertas">
                             <p class="section__p--ofertas">FIFA 23</p>
@@ -81,7 +82,7 @@
                         </div>
                     </article>
 
-                    <article>
+                    <article data-aos="zoom-out">
                         <div class="section__image--ofertas"></div>
                         <div class="section__description--ofertas">
                             <p class="section__p--ofertas">FIFA 23</p>
@@ -91,7 +92,7 @@
                         </div>
                     </article>
 
-                    <article>
+                    <article data-aos="zoom-out">
                         <div class="section__image--ofertas"></div>
                         <div class="section__description--ofertas">
                             <p class="section__p--ofertas">FIFA 23</p>
@@ -101,7 +102,7 @@
                         </div>
                     </article>
 
-                    <article>
+                    <article data-aos="zoom-out">
                         <div class="section__image--ofertas"></div>
                         <div class="section__description--ofertas">
                             <p class="section__p--ofertas">FIFA 23</p>
@@ -116,23 +117,23 @@
             <aside class="aside__gratuitos">
                 <h2 class="section__h2">GRATUITOS</h2>
                 <div class="container__ofertasGratuitos">
-                    <div class="aside__image--gratuitos"></div>
-                    <div class="aside__description--gratuitos">
+                    <div class="aside__image--gratuitos" data-aos="zoom-out"></div>
+                    <div class="aside__description--gratuitos" data-aos="zoom-out">
                         <p class="aside__p--gratuitos">FORTNITE</p>
                     </div>
 
-                    <div class="aside__image--gratuitos"></div>
-                    <div class="aside__description--gratuitos">
+                    <div class="aside__image--gratuitos" data-aos="zoom-out"></div>
+                    <div class="aside__description--gratuitos" data-aos="zoom-out">
                         <p class="aside__p--gratuitos">FORTNITE</p>
                     </div>
 
-                    <div class="aside__image--gratuitos"></div>
-                    <div class="aside__description--gratuitos">
+                    <div class="aside__image--gratuitos" data-aos="zoom-out"></div>
+                    <div class="aside__description--gratuitos" data-aos="zoom-out">
                         <p class="aside__p--gratuitos">FORTNITE</p>
                     </div>
 
-                    <div class="aside__image--gratuitos"></div>
-                    <div class="aside__description--gratuitos">
+                    <div class="aside__image--gratuitos" data-aos="zoom-out"></div>
+                    <div class="aside__description--gratuitos" data-aos="zoom-out">
                         <p class="aside__p--gratuitos">FORTNITE</p>
                     </div>
                 </div>
@@ -147,6 +148,12 @@
             <p class="footer__message">2023 - Desarrollado en mi curso de desarrollo web</p>
         </footer>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
