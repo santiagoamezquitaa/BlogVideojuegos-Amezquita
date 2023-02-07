@@ -35,16 +35,17 @@ html{
 
 .header__image{
     grid-area: header;
-    background-image: url('../imagenes/zelda-paisaje.png');
+    background-image: url('../imagenes/zelda-paisaje-xl.jpg');
+    width: 100%;
     height: 70.2rem;
-    background-repeat: no-repeat;
     background-size: cover; 
 }
 
 .header__socialMedia {
     background-color: #4F8A8B;
     height: 40px;
-    padding-top: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .header__socialMedia--nav {
@@ -57,13 +58,13 @@ html{
     margin-right: 82px;
     margin-left: auto;
     justify-content: space-around;
-    align-items: center;
     list-style: none;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
 }
 
 .header__socialMedia--img {
     border-radius: 7px;
-    margin-top: 3px;
     transition: all 1s;
 }
 
@@ -100,20 +101,25 @@ html{
     position: sticky;
     top: 10px;
     border-radius: 14px;
+    padding: 0px 0px 0px 0px;
 }
 
+.container-fluid {
+    background-color: #4F8A8B;
+    border-radius: 14px;
+}
 
-.header__nav--main {
-    display: flex;
-    list-style: none;
-    font-size: 0;
-    justify-content: space-evenly;
+.navbar-nav {
+    background-color: #4F8A8B;
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 14px;
 }
 
 .element__list--navMain {
     width: 14.4rem;
     position: relative;
-    font-size: 2rem;
+    font-size: 1.8rem;
     border-radius: 14px;
     height: 36px;
     transition: all 1s;
@@ -123,48 +129,40 @@ html{
     background-color: #EA907A;
 }
 
-.header__separador {
-    margin-top: 15.2rem;
-    height: 13.7rem;
+.dropdown-menu{
+    background-color: #4F8A8B;
+    width: 14.4rem;
+    border-radius: 0px 0px 14px 14px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.dropdown-item {
+    transition: all 1s;
+    color: #F4F6FF;
+}
+
+.nav-link {
+    color: #F4F6FF;
+}
+
+.dropdown-item:hover {
+    background-color: #EA907A;
+}
+
+.navbar-toggler {
+    background-color: #FFCB74;
+    margin-left: auto;
+    height: 28px;
+    width: 28px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 7px;
 }
 
 .header__separador--img {
-    display: block;
     width: 100%;
-    height: 100%;
-}
-
-.header__separador--imgMobile {
-    display: none;
-}
-
-.header__nav--main ul {
-    position: relative;
-    display: none;
-}
-
-.header__nav--main ul li {
-    display: block;
-    width: 14.4rem;
-    transition: all 1s;
-}
-
-.header__nav--main ul li:hover {
-    background-color: #EA907A;
-    border-radius: 14px;
-}
-
-.header__nav--main li:hover ul {
-    position: absolute;
-    display: block;
-    background-color: #4F8A8B;
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 14px;
-}
-
-.header__nav--main li a {
-    text-decoration: none;
-    color: white;
+    height: 137px;
+    margin-top: 150px;
 }
 
 h2 {
@@ -188,8 +186,8 @@ h2 {
 }
 
 .section__description--index{
-    width: 243px;
-    height: 152px;
+    width: 264px;
+    height: 167px;
     border-radius: 14px;
     background-color: #F4F6FF;
     margin-top: 72px;
@@ -220,7 +218,7 @@ h2 {
 
 .aside__container--index {
     background-color: #FFCB74;
-    width: 229px;
+    width: 245px;
     border-radius: 14px;
     margin-top: 72px;
     margin-left: auto;
@@ -232,8 +230,8 @@ h2 {
 }
 
 .aside__ranking {
-    width: 189px;
-    height: 110px;
+    width: 229px;
+    height: 124px;
     background-color: #f4f4f4;
     border-radius: 14px;
     padding: 7px 20px 7px 20px;
@@ -245,13 +243,14 @@ h2 {
     line-height: 26px;
     margin-top: 9px;
     list-style: none;
+    padding: 0px 0px 0px 0px;
 }
 
 .ol__bullet--top1 {
     background-image: url('../imagenes/medalla-de-oro.png');
     background-position: 0 50%;
     padding-left: 3rem;
-	background-size: 2rem 2 rem;
+	background-size: 2rem 2rem;
 	background-repeat: no-repeat;    
 }
 
@@ -259,7 +258,7 @@ h2 {
     background-image: url('../imagenes/medalla-de-plata.png');
     background-position: 0 50%;
     padding-left: 3rem;
-	background-size: 2rem 2 rem;
+	background-size: 2rem 2rem;
 	background-repeat: no-repeat;    
 }
 
@@ -267,7 +266,7 @@ h2 {
     background-image: url('../imagenes/medalla-de-bronce.png');
     background-position: 0 50%;
     padding-left: 3rem;
-	background-size: 2rem 2 rem;
+	background-size: 2rem 2rem;
 	background-repeat: no-repeat;    
 }
 
@@ -341,8 +340,8 @@ footer {
 }
 
 .section__description--masVendidos{
-    width: 436px;
-    height: 203px;
+    width: 476px;
+    height: 232px;
     border-radius: 14px;
     background-color: #F4F6FF;
     margin-top: 72px;
@@ -407,7 +406,7 @@ h3 {
 }
 
 .section__description--plataformas {
-    width: 460px;
+    width: 500px;
     height: 280px;
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
@@ -421,7 +420,7 @@ h3 {
     font-weight: bold;
     margin-right: 79px;
     width: 381px;
-    height: 70px;
+    height: auto;
 }
 
 .section__p--plataformas {
@@ -430,7 +429,7 @@ h3 {
     margin-right: 20px;
     margin-bottom: 21px;
     width: 440px;
-    height: 144px;
+    height: auto;
 }
 
 .section__fecha {
@@ -447,13 +446,13 @@ h3 {
 }
 
 .section__description--plataformas--reverse {
-    width: 460px;
+    width: 500px;
     height: 280px;
     border-top-left-radius: 14px;
     border-bottom-left-radius: 14px;
     background-color: #F4F6FF;
     margin-top: 72px;
-    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .section__image--plataformas--reverse {
@@ -463,6 +462,20 @@ h3 {
     margin-top: 72px;
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
+}
+
+.fecha--reverse {
+    margin: 6px auto 8px 6px;
+}
+
+.h3--reverse {
+    margin-left: 79px;
+    text-align: right;
+}
+
+.p--reverse {
+    margin-left: 20px;
+    text-align: right;
 }
 
 /* Seccion ofertas y gratuitos */
@@ -488,7 +501,7 @@ h3 {
 
 .container__ofertasGratuitos {
     background-color: #4F8A8B;
-    width: 343px;
+    width: 363px;
     border-radius: 14px;
     margin-top: 70px;
     padding: 10px 10px 10px 10px;
@@ -506,8 +519,8 @@ h3 {
 .section__description--ofertas {
     display: flex;
     background-color: #f4f4f4;
-    width: 313px;
-    height: 23px;
+    width: 343px;
+    height: 41px;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
     padding: 9px 15px 9px 15px;
@@ -516,8 +529,10 @@ h3 {
 .section__p--ofertas {
     width: 73px;
     height: 23px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 .section__sale {
@@ -527,11 +542,15 @@ h3 {
     border-radius: 6px;
     margin-left: auto;
     text-align: center;
+    padding: 0px 0px 0px 0px;
 }
 
 .section__p--sale {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
+    height: 23px;
+    margin-bottom: auto;
+    margin: 0px 0px 0px 0px;
 }
 
 .aside__gratuitos {
@@ -546,16 +565,18 @@ h3 {
 .aside__description--gratuitos {
     display: flex;
     background-color: #FFCB74;
-    width: 313px;
-    height: 23px;
+    width: 343px;
+    height: 41px;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
     padding: 9px 15px 9px 15px;
 }
 
 .aside__p--gratuitos {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .aside__image--gratuitos {
@@ -582,70 +603,30 @@ h3 {
     width: 512px;
     height: 512px;
     margin-top: 110px;
+    margin-bottom: 110px;
 }
 
 .section__form{
     margin-left: auto;
-    margin-top: 110px;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-#nombre {
-    background-color: #FFCB74;
-    width: 348px;
-    height: 40px;
-    border-radius: 14px;
-    border-style: none;
-}
-
-#apellidos {
+.input__contactUs {
     background-color: #FFCB74;
     width: 348px;
     height: 40px;
     border-radius: 14px;
     margin-top: 20px;
     border-style: none;
+    font-size: 1.6rem;
 }
 
-#email {
-    background-color: #FFCB74;
-    width: 348px;
-    height: 40px;
-    border-radius: 14px;
-    margin-top: 20px;
-    border-style: none;
-}
-
-.container__asunto {
-    margin-top: 20px;
-}
-
-.label__asuntoMensaje {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-left: 20px;
-    margin-right: 18px;
-}
-
-#asunto {
-    background-color: #FFCB74;
-    width: 227px;
-    height: 40px;
-    border-radius: 14px;
-    margin-left: auto;
-    border-style: none;
-}
-
-#form__textArea {
-    background-color: #FFCB74;
-    width: 348px;
+.input__contactUs--textArea {
     height: 203px;
-    border-radius: 14px;
-    border-style: none;
 }
 
-#btn__limpiar {
+.buttons__form {
     width: 160px;
     height: 30px;
     border-radius: 14px;
@@ -654,30 +635,19 @@ h3 {
     margin-top: 20px;
     font-weight: bold;
     border-style: none;
+    transition: all 1s;
 }
 
-#btn__enviar {
-    width: 160px;
-    height: 30px;
-    border-radius: 14px;
-    background-color: #EA907A;
-    color: #f4f4f4;
-    margin-top: 20px;
-    font-weight: bold;
-    border-style: none;
-    margin-left: auto;
+.buttons__form:hover {
+    background-color: #d6775f;
+}
+
+.mb-3 {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 375px) {
-
-    .header__image{
-        grid-area: header;
-        background-image: url('../imagenes/zelda-paisaje-mobile.png');
-        height: 41.8rem;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover; 
-    }
 
     .header__socialMedia--nav {
         background-color: #FFCB74;
@@ -689,9 +659,10 @@ h3 {
         margin-right: auto;
         margin-left: 6px;
         justify-content: space-around;
-        align-items: flex-end;
         list-style: none;
-    }
+        align-items: center;
+        padding: 0px 0px 0px 0px;
+    } 
 
     .header__logoTittle {
         text-align: center;
@@ -704,22 +675,25 @@ h3 {
     }
 
     .header__nav {
-        display: none;
+        margin-left: auto;
+        width: 224px;
+        height: 28px;
+        text-align: left;
+        position: static;
     }
 
-    .header__separador {
-        margin-top: 14.3rem;
-        height: 7.4rem;
+    .container-fluid {
+        width: 224px;
     }
 
     .header__separador--img {
-        display: none;
-    }
-    
-    .header__separador--imgMobile {
         width: 100%;
-        height: 100%;
-        display: block;
+        height: 137px;
+        margin-top: 371px;
+    }
+
+    .nav-link {
+        margin-left: 10px;
     }
 
     /* INDEX */
@@ -732,7 +706,7 @@ h3 {
             "aside"
             "footer";
         grid-template-columns: auto;
-        grid-template-rows: 418px auto auto 189px;
+        grid-template-rows: 702px auto auto 189px;
     }
 
     .section__index{
@@ -757,7 +731,7 @@ h3 {
     }
     
     .section__description--index{
-        width: 226px;
+        width: 245px;
         height: 124px;
         background-color: #F4F6FF;
         margin-top: 0px;
@@ -767,7 +741,7 @@ h3 {
         border-radius: 0px;
         border-bottom-left-radius: 14px;
         border-bottom-right-radius: 14px;
-    }   
+    }
     
     .section__h3--index {
         font-size: 1.25rem;
@@ -776,7 +750,7 @@ h3 {
     }
     
     .section__p--index {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         width: 195px;
         height: auto;
         margin-top: 6px;
@@ -794,7 +768,7 @@ h3 {
     
     .aside__container--index {
         background-color: #FFCB74;
-        width: 229px;
+        width: 245px;
         border-radius: 14px;
         margin-top: 24px;
         margin-left: auto;
