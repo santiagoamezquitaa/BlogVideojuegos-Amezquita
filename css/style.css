@@ -44,6 +44,7 @@ html{
 .header__socialMedia {
     background-color: #4F8A8B;
     height: 40px;
+    width: 100%;
     padding-top: 4px;
     padding-bottom: 4px;
 }
@@ -277,7 +278,7 @@ h2 {
 
 footer {
     grid-area: footer;
-    width: auto;
+    width: 100%;
     height: 190px;
     background-color: #4F8A8B;    
     border: 3px;
@@ -649,18 +650,25 @@ h3 {
 
 @media screen and (max-width: 375px) {
 
-    .header__socialMedia--nav {
-        background-color: #FFCB74;
-        height: 32px;
-        width: 153px;
-        border-radius: 7px;
-        display: flex;
-        flex-direction: row;    
-        margin-right: auto;
+    #grid {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "section"
+            "aside"
+            "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto 189px;
+    }
+
+    .header__image{
+        grid-area: header;
+    }
+
+    .header__socialMedia--nav { 
+        margin-right: 0px;
         margin-left: 6px;
         justify-content: space-around;
-        list-style: none;
-        align-items: center;
         padding: 0px 0px 0px 0px;
     } 
 
@@ -675,7 +683,6 @@ h3 {
     }
 
     .header__nav {
-        margin-left: auto;
         width: 224px;
         height: 28px;
         text-align: left;
@@ -687,8 +694,6 @@ h3 {
     }
 
     .header__separador--img {
-        width: 100%;
-        height: 137px;
         margin-top: 371px;
     }
 
@@ -696,18 +701,11 @@ h3 {
         margin-left: 10px;
     }
 
-    /* INDEX */
-
-    #grid {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "section"
-            "aside"
-            "footer";
-        grid-template-columns: auto;
-        grid-template-rows: 702px auto auto 189px;
+    footer {
+        grid-area: footer;
     }
+
+    /* INDEX */
 
     .section__index{
         grid-area: section;
@@ -789,7 +787,7 @@ h3 {
             "aside"
             "footer";
         grid-template-columns: auto;
-        grid-template-rows: 418px auto auto 189px;
+        grid-template-rows: auto auto auto 189px;
     }
     
     .section__ofertas {
@@ -805,7 +803,6 @@ h3 {
     }
     
     .container__ofertasGratuitos {
-        border-radius: 14px;
         margin-top: 24px;
     }
     
