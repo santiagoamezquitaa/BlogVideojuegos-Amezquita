@@ -1,0 +1,36 @@
+.section__index{
+    grid-area: section;
+    width: 552px;
+    margin: 41px 48px 107px auto;
+}
+
+.section__image--index {
+    background-image: url('../imagenes/capcom.png');
+    width: 264px;
+    height: 167px;
+    margin-top: 72px;
+    border-radius: $borderRadiusGrande;
+}
+
+.section__description--index{
+    width: 264px;
+    height: 167px;
+    border-radius: $borderRadiusGrande;
+    background-color: $colorCuaternario;
+    margin-top: 72px;
+    margin-left: auto;
+    padding-left: 21px;
+    padding-top: 15px;
+}
+
+.section__h3--index {
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: auto;
+}
+
+.section__p--index {
+    font-size: 1.1rem;
+    margin-top: 6px;
+    margin-right: 33px;
+}

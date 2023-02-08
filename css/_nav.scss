@@ -1,0 +1,66 @@
+.header__nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 744px;
+    height: 36px;
+    text-align: center;
+    background-color: $colorPrincipal;
+    font-family: $tipografiaOswald;
+    position: sticky;
+    top: 10px;
+    border-radius: $borderRadiusGrande;
+    padding: $ajustePadding;
+}
+
+.container-fluid {
+    background-color: $colorPrincipal;
+    border-radius: $borderRadiusGrande;
+}
+
+.navbar-nav {
+    background-color: $colorPrincipal;
+    width: 100%;
+    justify-content: space-around;
+    border-radius: $borderRadiusGrande;
+}
+
+.element__list--navMain {
+    width: 14.4rem;
+    position: relative;
+    font-size: 1.8rem;
+    border-radius: $borderRadiusGrande;
+    height: 36px;
+    transition: all 1s;
+        &:hover {
+            background-color: $colorTerciario;
+        }
+}
+
+.dropdown-menu{
+    background-color: $colorPrincipal;
+    width: 14.4rem;
+    border-radius: 0px 0px $borderRadiusGrande $borderRadiusGrande;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.dropdown-item {
+    transition: all 1s;
+    color: $colorCuaternario;
+    &:hover {
+        background-color: $colorTerciario;
+    }
+}
+
+.nav-link {
+    color: $colorCuaternario;
+}
+
+.navbar-toggler {
+    background-color: $colorSecundario;
+    margin-left: auto;
+    height: 28px;
+    width: 28px;
+    padding: $ajustePadding;
+    border-radius: 7px;
+}

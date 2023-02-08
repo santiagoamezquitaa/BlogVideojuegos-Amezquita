@@ -1,0 +1,93 @@
+#section__plataformas {
+    width: 941px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 41px;
+    margin-bottom: 107px;
+}
+
+.section__h2--plataformas {
+    margin-top: 60px;
+    text-align: left;
+}
+
+.section__image--plataformas {
+    background-image: url('../imagenes/amd_promo.png');
+    width: 441px;
+    height: 280px;
+    margin-top: 72px;
+    border-top-left-radius: $borderRadiusGrande;
+    border-bottom-left-radius: $borderRadiusGrande;
+}
+
+.section__description--plataformas {
+    width: 500px;
+    height: 280px;
+    border-top-right-radius: $borderRadiusGrande;
+    border-bottom-right-radius: $borderRadiusGrande;
+    background-color: $colorCuaternario;
+    margin-top: 72px;
+    padding-left: 40px;
+}
+
+.section__fecha {
+    background-color: $colorSecundario;
+    width: 73px;
+    height: 23px;
+    border-radius: 6px;
+    margin: 6px 6px 8px auto;
+}
+
+.section__p--plataformas--fecha {
+    font-size: 1.2rem;
+    text-align: center;
+}
+.section__h3--plataformas {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 79px;
+    width: 381px;
+    height: auto;
+}
+
+.section__p--plataformas {
+    font-size: 1.5rem;
+    margin-top: 8px;
+    margin-right: 20px;
+    margin-bottom: 21px;
+    width: 440px;
+    height: auto;
+}
+
+.section__description--plataformas--reverse {
+    width: 500px;
+    height: 280px;
+    border-top-left-radius: $borderRadiusGrande;
+    border-bottom-left-radius: $borderRadiusGrande;
+    background-color: $colorCuaternario;
+    margin-top: 72px;
+    padding-right: 40px;
+}
+
+.fecha--reverse {
+    margin: 6px auto 8px 6px;
+}
+
+.h3--reverse {
+    margin-left: 79px;
+    text-align: right;
+}
+
+.p--reverse {
+    margin-left: 20px;
+    text-align: right;
+}
+
+.section__image--plataformas--reverse {
+    background-image: url('../imagenes/amd_promo.png');
+    width: 441px;
+    height: 280px;
+    margin-top: 72px;
+    border-top-right-radius: $borderRadiusGrande;
+    border-bottom-right-radius: $borderRadiusGrande;
+}

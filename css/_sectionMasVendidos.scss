@@ -1,0 +1,52 @@
+#section__masVendidos {
+    width: 884px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 41px;
+    margin-bottom: 107px;
+}
+
+.section__video {
+    width: 367px;
+    height: 232px;
+    display: inline-block;
+    border-radius: $borderRadiusGrande;
+    margin-top: 72px;
+}
+
+.section__description--masVendidos {
+    width: 476px;
+    height: 232px;
+    border-radius: $borderRadiusGrande;
+    background-color: $colorCuaternario;
+    margin-top: 72px;
+    margin-left: auto;
+    padding-left: 38px;
+    padding-top: 29px;
+}
+
+.section__h3--masVendidos {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.section__p--masVendidos {
+    font-size: 1.5rem;
+    margin-top: 23px;
+    margin-right: 62px;
+}
+
+.section__precio {
+    background-color: $colorSecundario;
+    width: 108px;
+    height: 27px;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.section__p--masVendidos--precio {
+    font-size: 1.5rem;
+    margin-top: 23px;
+    text-align: center;
+}

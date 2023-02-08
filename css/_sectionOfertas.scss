@@ -1,0 +1,72 @@
+#grid__ofertasGratuitos {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "section aside"
+        "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 189px;
+}
+
+.section__ofertas {
+    grid-area: section;
+    width: 363px;
+    margin-top: 41px;
+    margin-bottom: 107px;
+    margin-left: auto;
+    margin-right: 83px;
+}
+
+.container__ofertasGratuitos {
+    background-color: $colorPrincipal;
+    width: 363px;
+    border-radius: $borderRadiusGrande;
+    margin-top: 70px;
+    padding: 10px 10px 10px 10px;
+}
+
+.section__image--ofertas {
+    background-image: url('../imagenes/fifa23.png');
+    width: 343px;
+    height: 217px;
+    border-top-left-radius: $borderRadiusGrande;
+    border-top-right-radius: $borderRadiusGrande;
+    margin-top: 10px;
+}
+
+.section__description--ofertas {
+    display: flex;
+    background-color: $colorCuaternario;
+    width: 343px;
+    height: 41px;
+    border-bottom-left-radius: $borderRadiusGrande;
+    border-bottom-right-radius: $borderRadiusGrande;
+    padding: 9px 15px 9px 15px;
+}
+
+.section__p--ofertas {
+    width: 73px;
+    height: 23px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.section__sale {
+    width: 125px;
+    height: 23px;
+    background-color: $colorSecundario;
+    border-radius: 6px;
+    margin-left: auto;
+    text-align: center;
+    padding: $ajustePadding;
+}
+
+.section__p--sale {
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 23px;
+    margin-bottom: auto;
+    margin: 0px 0px 0px 0px;
+}
