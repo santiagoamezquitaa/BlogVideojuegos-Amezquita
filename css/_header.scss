@@ -1,0 +1,62 @@
+.header__image{
+    grid-area: header;
+    background-image: url('../imagenes/zelda-paisaje-xl.jpg');
+    width: 100%;
+    height: 70.2rem;
+    background-size: cover; 
+}
+
+.header__socialMedia {
+    background-color: $colorPrincipal;
+    height: 40px;
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.header__socialMedia--nav {
+    background-color: $colorSecundario;
+    height: 32px;
+    width: 153px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;    
+    margin-right: 82px;
+    margin-left: auto;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    padding: $ajustePadding;
+}
+
+.header__socialMedia--img {
+    border-radius: 7px;
+    transition: all 1s;
+    &:hover {
+        background-color: #DC9D34;
+    }
+}
+
+.header__logoTittle {
+    text-align: center;
+    margin-top: 68px;
+    margin-bottom: 25px;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+ .header__separador--img {
+    width: 100%;
+    height: 137px;
+    margin-top: 150px;
+}

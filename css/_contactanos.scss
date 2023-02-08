@@ -1,0 +1,55 @@
+#section__contactanos {
+    width: 943px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 41px;
+    margin-bottom: 107px;
+}
+
+.section__image--contact {
+    background-image: url('../imagenes/email.png');
+    width: 512px;
+    height: 512px;
+    margin-top: 110px;
+    margin-bottom: 110px;
+}
+
+.section__form{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.input__contactUs {
+    background-color: $colorSecundario;
+    width: 348px;
+    height: 40px;
+    border-radius: $borderRadiusGrande;
+    margin-top: 20px;
+    border-style: none;
+    font-size: 1.6rem;
+}
+
+.input__contactUs--textArea {
+    height: 203px;
+}
+
+.buttons__form {
+    width: 160px;
+    height: 30px;
+    border-radius: $borderRadiusGrande;
+    background-color: $colorTerciario;
+    color: $colorCuaternario;
+    margin-top: 20px;
+    font-weight: bold;
+    border-style: none;
+    transition: all 1s;
+    &:hover {
+        background-color: #d6775f;
+    }
+}
+
+.mb-3 {
+    display: flex;
+    justify-content: space-between;
+}

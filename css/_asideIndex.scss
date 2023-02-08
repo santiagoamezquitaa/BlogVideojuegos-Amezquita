@@ -1,0 +1,66 @@
+.aside__index {
+    grid-area: aside;
+    width: 290px;
+    margin-left: 48px;
+    margin-right: auto;
+    margin-top: 41px;
+}
+
+.aside__container--index {
+    background-color: $colorSecundario;
+    width: 245px;
+    border-radius: $borderRadiusGrande;
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+
+.aside__ranking {
+    width: 229px;
+    height: 124px;
+    background-color: $colorCuaternario;
+    border-radius: $borderRadiusGrande;
+    padding: 7px 20px 7px 20px;
+    margin-top: 10px;
+}
+
+.aside__ol {
+    font-size: 1.1rem;
+    line-height: 26px;
+    margin-top: 9px;
+    list-style: none;
+    padding: $ajustePadding;
+}
+
+.ol__bullet--top1 {
+    background-image: url('../imagenes/medalla-de-oro.png');
+    background-position: 0 50%;
+    padding-left: 3rem;
+	background-size: 2rem 2rem;
+	background-repeat: no-repeat;    
+}
+
+.ol__bullet--top2 {
+    background-image: url('../imagenes/medalla-de-plata.png');
+    background-position: 0 50%;
+    padding-left: 3rem;
+	background-size: 2rem 2rem;
+	background-repeat: no-repeat;    
+}
+
+.ol__bullet--top3 {
+    background-image: url('../imagenes/medalla-de-bronce.png');
+    background-position: 0 50%;
+    padding-left: 3rem;
+	background-size: 2rem 2rem;
+	background-repeat: no-repeat;    
+}
+
+.aside__h3--ranking {
+    font-size: 1.6rem;
+    font-weight: bold;
+}

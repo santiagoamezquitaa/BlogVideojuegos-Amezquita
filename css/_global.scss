@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	overflow-x: hidden;
+    background-color: #C2E3E4;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../font/RobotoMono-VariableFont_wght.ttf');
+}
+
+#grid {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "section aside"
+        "footer footer";
+    grid-template-columns: 56.5% auto;
+    grid-template-rows: 740px auto 189px;
+    grid-column-gap: 98px;
+}
+
+h2 {
+    font-family: $tipografiaRoboto;
+    font-weight: bold;    
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-family: $tipografiaRoboto;
+    font-weight: bold;  
+}
+
+.section__container {
+    display: flex;
+}
+
+.section__h2 {
+    margin-top: 80px;
+    text-align: center;
+}

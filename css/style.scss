@@ -1,0 +1,180 @@
+@import 'variables';
+@import 'global';
+@import 'header';
+@import 'nav';
+@import 'sectionIndex';
+@import 'asideIndex';
+@import 'footer';
+@import 'sectionMasVendidos';
+@import 'sectionPlataformas';
+@import 'sectionOfertas';
+@import 'asideGratuitos';
+@import 'contactanos';
+
+@media screen and (max-width: 375px) {
+
+    #grid {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "section"
+            "aside"
+            "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto 189px;
+    }
+
+    .header__image{
+        grid-area: header;
+    }
+
+    .header__socialMedia--nav { 
+        margin-right: 0px;
+        margin-left: 6px;
+        justify-content: space-around;
+        padding: $ajustePadding;
+    } 
+
+    .header__logoTittle {
+        text-align: center;
+        margin-top: 53px;
+    }
+    
+    .header__logoTittle--img{
+        width: 283px;
+        height: 108px;
+    }
+
+    .header__nav {
+        width: 224px;
+        height: 28px;
+        text-align: left;
+        position: static;
+    }
+
+    .container-fluid {
+        width: 224px;
+    }
+
+    .header__separador--img {
+        margin-top: 371px;
+    }
+
+    .nav-link {
+        margin-left: 10px;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    /* INDEX */
+
+    .section__index{
+        grid-area: section;
+        width: 245px;
+        margin: 28px auto 0px auto;
+    }
+
+    .section__container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .section__image--index {
+        background-image: url('../imagenes/capcom.png');
+        width: 245px;
+        height: 134px;
+        margin-top: 0px;
+        border-radius: 0px;
+        border-top-left-radius: $borderRadiusGrande;
+        border-top-right-radius: $borderRadiusGrande;
+    }
+    
+    .section__description--index{
+        width: 245px;
+        height: 124px;
+        background-color: #F4F6FF;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-left: 19px;
+        padding-top: 10px;
+        border-radius: 0px;
+        border-bottom-left-radius: $borderRadiusGrande;
+        border-bottom-right-radius: $borderRadiusGrande;
+    }
+    
+    .section__h3--index {
+        font-size: 1.25rem;
+        font-weight: bold;
+        width: 207px;
+    }
+    
+    .section__p--index {
+        font-size: 0.8rem;
+        width: 195px;
+        height: auto;
+        margin-top: 6px;
+        margin-right: 33px;
+    }
+
+    .aside__index {
+        grid-area: aside;
+        width: 290px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    
+    .aside__container--index {
+        background-color: $colorSecundario;
+        width: 245px;
+        border-radius: $borderRadiusGrande;
+        margin-top: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 8px;
+        padding-bottom: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+    }
+    
+    /* OFERTAS Y GRATUITOS*/
+
+    #grid__ofertasGratuitos {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "section"
+            "aside"
+            "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto 189px;
+    }
+    
+    .section__ofertas {
+        grid-area: section;
+        margin-top: 28px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section__h2{
+        margin-top: 0px;
+    }
+    
+    .container__ofertasGratuitos {
+        margin-top: 24px;
+    }
+    
+    .aside__gratuitos {
+        grid-area: aside;
+        margin-top: 61px;
+        margin-bottom: 61px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+}

@@ -1,0 +1,34 @@
+.aside__gratuitos {
+    grid-area: aside;
+    width: 363px;
+    margin-top: 41px;
+    margin-bottom: 107px;
+    margin-right: auto;
+    margin-left: 83px;
+}
+
+.aside__image--gratuitos {
+    background-image: url('../imagenes/fortnite.png');
+    width: 343px;
+    height: 217px;
+    border-top-left-radius: $borderRadiusGrande;
+    border-top-right-radius: $borderRadiusGrande;
+    margin-top: 10px;
+}
+
+.aside__description--gratuitos {
+    display: flex;
+    background-color: $colorSecundario;
+    width: 343px;
+    height: 41px;
+    border-bottom-left-radius: $borderRadiusGrande;
+    border-bottom-right-radius: $borderRadiusGrande;
+    padding: 9px 15px 9px 15px;
+}
+
+.aside__p--gratuitos {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+}
