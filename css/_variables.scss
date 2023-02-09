@@ -9,3 +9,22 @@ $colorCuaternario: #F4F6FF;
 $borderRadiusGrande: 14px;
 
 $ajustePadding: 0px 0px 0px 0px;
+
+$estilosOfertasGratuitos: (
+    width: 363px,
+    width-image-description: 343px,
+    margin-top: 41px,
+    margin-bottom: 107px,
+    height-image: 217px,
+    height-description: 41px,
+);
+
+$estilosSectionIndex: (
+    width: 264px,
+    height: 167px,
+);
+
+@mixin sizes($width, $height) {
+    width: $width; 
+    height: $height;
+}

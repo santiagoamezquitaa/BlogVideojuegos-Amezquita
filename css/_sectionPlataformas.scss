@@ -13,27 +13,24 @@
 
 .section__image--plataformas {
     background-image: url('../imagenes/amd_promo.png');
-    width: 441px;
-    height: 280px;
+    @include sizes(441px, 280px);
     margin-top: 72px;
     border-top-left-radius: $borderRadiusGrande;
     border-bottom-left-radius: $borderRadiusGrande;
 }
 
 .section__description--plataformas {
-    width: 500px;
-    height: 280px;
-    border-top-right-radius: $borderRadiusGrande;
-    border-bottom-right-radius: $borderRadiusGrande;
+    @include sizes(500px, 280px);
     background-color: $colorCuaternario;
     margin-top: 72px;
     padding-left: 40px;
+    border-top-right-radius: $borderRadiusGrande;
+    border-bottom-right-radius: $borderRadiusGrande;
 }
 
 .section__fecha {
     background-color: $colorSecundario;
-    width: 73px;
-    height: 23px;
+    @include sizes(73px, 23px);
     border-radius: 6px;
     margin: 6px 6px 8px auto;
 }
@@ -46,8 +43,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 79px;
-    width: 381px;
-    height: auto;
+    @include sizes(381px, auto);
 }
 
 .section__p--plataformas {
@@ -55,18 +51,17 @@
     margin-top: 8px;
     margin-right: 20px;
     margin-bottom: 21px;
-    width: 440px;
-    height: auto;
+    @include sizes(440px, auto);
 }
 
 .section__description--plataformas--reverse {
-    width: 500px;
-    height: 280px;
+    @extend .section__description--plataformas;
+    padding-left: 0px;
+    padding-right: 40px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-top-left-radius: $borderRadiusGrande;
     border-bottom-left-radius: $borderRadiusGrande;
-    background-color: $colorCuaternario;
-    margin-top: 72px;
-    padding-right: 40px;
 }
 
 .fecha--reverse {
@@ -84,10 +79,9 @@
 }
 
 .section__image--plataformas--reverse {
-    background-image: url('../imagenes/amd_promo.png');
-    width: 441px;
-    height: 280px;
-    margin-top: 72px;
+    @extend .section__image--plataformas;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     border-top-right-radius: $borderRadiusGrande;
     border-bottom-right-radius: $borderRadiusGrande;
 }

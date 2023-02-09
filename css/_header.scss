@@ -1,23 +1,20 @@
 .header__image{
     grid-area: header;
     background-image: url('../imagenes/zelda-paisaje-xl.jpg');
-    width: 100%;
-    height: 70.2rem;
+    @include sizes(100%, 70.2rem);
     background-size: cover; 
 }
 
 .header__socialMedia {
     background-color: $colorPrincipal;
-    height: 40px;
-    width: 100%;
+    @include sizes(100%, 40px);
     padding-top: 4px;
     padding-bottom: 4px;
 }
 
 .header__socialMedia--nav {
     background-color: $colorSecundario;
-    height: 32px;
-    width: 153px;
+    @include sizes(153px, 32px);
     border-radius: 7px;
     display: flex;
     flex-direction: row;    
@@ -56,7 +53,6 @@
  }
 
  .header__separador--img {
-    width: 100%;
-    height: 137px;
+    @include sizes(100%, 137px);
     margin-top: 150px;
 }

@@ -10,16 +10,16 @@
 
 .section__ofertas {
     grid-area: section;
-    width: 363px;
-    margin-top: 41px;
-    margin-bottom: 107px;
+    width: map-get($estilosOfertasGratuitos, width);
+    margin-top: map-get($estilosOfertasGratuitos, margin-top);
+    margin-bottom: map-get($estilosOfertasGratuitos, margin-bottom);
     margin-left: auto;
     margin-right: 83px;
 }
 
 .container__ofertasGratuitos {
     background-color: $colorPrincipal;
-    width: 363px;
+    width: map-get($estilosOfertasGratuitos, width);
     border-radius: $borderRadiusGrande;
     margin-top: 70px;
     padding: 10px 10px 10px 10px;
@@ -27,8 +27,8 @@
 
 .section__image--ofertas {
     background-image: url('../imagenes/fifa23.png');
-    width: 343px;
-    height: 217px;
+    width: map-get($estilosOfertasGratuitos, width-image-description);
+    height: map-get($estilosOfertasGratuitos, height-image);
     border-top-left-radius: $borderRadiusGrande;
     border-top-right-radius: $borderRadiusGrande;
     margin-top: 10px;
@@ -38,15 +38,14 @@
     display: flex;
     background-color: $colorCuaternario;
     width: 343px;
-    height: 41px;
+    height: map-get($estilosOfertasGratuitos, height-description);
     border-bottom-left-radius: $borderRadiusGrande;
     border-bottom-right-radius: $borderRadiusGrande;
     padding: 9px 15px 9px 15px;
 }
 
 .section__p--ofertas {
-    width: 73px;
-    height: 23px;
+    @include sizes(73px, 23px);
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: auto;
@@ -54,8 +53,7 @@
 }
 
 .section__sale {
-    width: 125px;
-    height: 23px;
+    @include sizes(125px, 23px);
     background-color: $colorSecundario;
     border-radius: 6px;
     margin-left: auto;

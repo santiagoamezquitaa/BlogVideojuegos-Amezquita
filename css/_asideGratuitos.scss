@@ -1,16 +1,16 @@
 .aside__gratuitos {
     grid-area: aside;
-    width: 363px;
-    margin-top: 41px;
-    margin-bottom: 107px;
+    width: map-get($estilosOfertasGratuitos, width);
+    margin-top: map-get($estilosOfertasGratuitos, margin-top);
+    margin-bottom: map-get($estilosOfertasGratuitos, margin-bottom);
     margin-right: auto;
     margin-left: 83px;
 }
 
 .aside__image--gratuitos {
     background-image: url('../imagenes/fortnite.png');
-    width: 343px;
-    height: 217px;
+    width: map-get($estilosOfertasGratuitos, width-image-description);
+    height: map-get($estilosOfertasGratuitos, height-image);
     border-top-left-radius: $borderRadiusGrande;
     border-top-right-radius: $borderRadiusGrande;
     margin-top: 10px;
@@ -19,8 +19,8 @@
 .aside__description--gratuitos {
     display: flex;
     background-color: $colorSecundario;
-    width: 343px;
-    height: 41px;
+    width: map-get($estilosOfertasGratuitos, width-image-description);
+    height: map-get($estilosOfertasGratuitos, height-description);
     border-bottom-left-radius: $borderRadiusGrande;
     border-bottom-right-radius: $borderRadiusGrande;
     padding: 9px 15px 9px 15px;
