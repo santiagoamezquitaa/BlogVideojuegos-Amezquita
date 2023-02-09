@@ -8,8 +8,7 @@
 
 .section__image--contact {
     background-image: url('../imagenes/email.png');
-    width: 512px;
-    height: 512px;
+    @include sizes(512px, 512px);
     margin-top: 110px;
     margin-bottom: 110px;
 }
@@ -22,8 +21,7 @@
 
 .input__contactUs {
     background-color: $colorSecundario;
-    width: 348px;
-    height: 40px;
+    @include sizes(348px, 40px);
     border-radius: $borderRadiusGrande;
     margin-top: 20px;
     border-style: none;
@@ -35,14 +33,14 @@
 }
 
 .buttons__form {
-    width: 160px;
-    height: 30px;
+    @include sizes(160px, 30px);
     border-radius: $borderRadiusGrande;
     background-color: $colorTerciario;
     color: $colorCuaternario;
     margin-top: 20px;
     font-weight: bold;
     border-style: none;
+    font-size: 1.2rem;
     transition: all 1s;
     &:hover {
         background-color: #d6775f;

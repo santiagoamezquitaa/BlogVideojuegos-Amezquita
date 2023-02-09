@@ -1,8 +1,7 @@
 .header__nav {
     margin-left: auto;
     margin-right: auto;
-    width: 744px;
-    height: 36px;
+    @include sizes(744px, 36px);
     text-align: center;
     background-color: $colorPrincipal;
     font-family: $tipografiaOswald;
@@ -25,11 +24,10 @@
 }
 
 .element__list--navMain {
-    width: 14.4rem;
+    @include sizes(14.4rem, 36px);
     position: relative;
     font-size: 1.8rem;
     border-radius: $borderRadiusGrande;
-    height: 36px;
     transition: all 1s;
         &:hover {
             background-color: $colorTerciario;
@@ -59,8 +57,7 @@
 .navbar-toggler {
     background-color: $colorSecundario;
     margin-left: auto;
-    height: 28px;
-    width: 28px;
+    @include sizes(28px, 28px);
     padding: $ajustePadding;
     border-radius: 7px;
 }

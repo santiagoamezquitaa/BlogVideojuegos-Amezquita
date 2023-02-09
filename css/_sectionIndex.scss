@@ -6,15 +6,15 @@
 
 .section__image--index {
     background-image: url('../imagenes/capcom.png');
-    width: 264px;
-    height: 167px;
+    width: map-get($estilosSectionIndex, width);
+    height: map-get($estilosSectionIndex, height);
     margin-top: 72px;
     border-radius: $borderRadiusGrande;
 }
 
 .section__description--index{
-    width: 264px;
-    height: 167px;
+    width: map-get($estilosSectionIndex, width);
+    height: map-get($estilosSectionIndex, height);
     border-radius: $borderRadiusGrande;
     background-color: $colorCuaternario;
     margin-top: 72px;

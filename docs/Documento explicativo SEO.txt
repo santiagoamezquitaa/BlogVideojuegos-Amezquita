@@ -1,0 +1,34 @@
+Agregué características SEO para cada una de las secciones, las cuales se enlistan a continuación con sus respectivas adiciones:
+
+	- index.html:
+		
+		> Descripción: Mediante la etiqueta meta description, agregué el siguiente parrafo: "Novedades y ranking de videojuegos en un top 3 de cada género."
+		> Palabras clave: Mediante la etiqueta meta keywords, agregué las siguientes palabras clave: "Videojuegos, Games, Novedades, Top, ranking, generos"
+
+	- plataformas.html:
+		
+		> Descripción: Mediante la etiqueta meta description, agregué el siguiente parrafo: "Las noticias más actuales de los videojuegos por cada plataforma, PC, PS5, XBOX, Nintendo Switch."
+		> Palabras clave: Mediante la etiqueta meta keywords, agregué las siguientes palabras clave: "Videojuegos, Games, Plataformas, PC, Playstation, PS5, xbox, NS, Nintendo Switch, Consolas"
+
+	- ofertas-gratuitos.html:
+		
+		> Descripción: Mediante la etiqueta meta description, agregué el siguiente parrafo: "Las noticias más actuales de los videojuegos por cada plataforma, PC, PS5, XBOX, Nintendo Switch."
+		> Palabras clave: Mediante la etiqueta meta keywords, agregué las siguientes palabras clave: "Videojuegos, Games, Plataformas, PC, Playstation, PS5, xbox, NS, Nintendo Switch, Consolas"
+
+	- mas-vendidos.html:
+		
+		> Descripción: Mediante la etiqueta meta description, agregué el siguiente parrafo: "Conoce los videojuegos más destacados del mercado con sus precios y enlaces directos a las tiendas."
+		> Palabras clave: Mediante la etiqueta meta keywords, agregué las siguientes palabras clave: "Videojuegos, Games, Top, trailers, precios, moneda, colombia"
+
+	- contactanos.html:
+		
+		> Descripción: Mediante la etiqueta meta description, agregué el siguiente parrafo: "¿Quieres contactarnos para publicidad, información o recomendación sobre algún videojuego? Este es el lugar."
+		> Palabras clave: Mediante la etiqueta meta keywords, agregué las siguientes palabras clave: "Videojuegos, Games, contacto, publicidad, contactUs"
+
+Cabe aclarar que cada sección cuenta con encabezados de h1, h2 y h3, usados para distintos títulos.
+
+
+
+
+
+

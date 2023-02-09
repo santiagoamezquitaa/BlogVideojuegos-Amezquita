@@ -7,16 +7,14 @@
 }
 
 .section__video {
-    width: 367px;
-    height: 232px;
+    @include sizes(367px, 232px);
     display: inline-block;
     border-radius: $borderRadiusGrande;
     margin-top: 72px;
 }
 
 .section__description--masVendidos {
-    width: 476px;
-    height: 232px;
+    @include sizes(476px, 232px);
     border-radius: $borderRadiusGrande;
     background-color: $colorCuaternario;
     margin-top: 72px;
@@ -38,8 +36,7 @@
 
 .section__precio {
     background-color: $colorSecundario;
-    width: 108px;
-    height: 27px;
+    @include sizes(108px, 27px);
     border-radius: 6px;
     margin-left: auto;
     margin-right: 25px;
