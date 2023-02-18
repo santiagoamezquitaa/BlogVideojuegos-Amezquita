@@ -6,6 +6,17 @@ footer {
     background-color: $colorPrincipal;    
     border: 3px;
     border-style: solid;
+    transition: all 1s;
+}
+
+.footer__oneColumn {
+    grid-area: footer__oneColumn;
+    @include sizes(100%, 190px);
+    width: 100%;
+    height: 190px;
+    background-color: $colorPrincipal;    
+    border: 3px;
+    border-style: solid;
 }
 
 .footer__logoTittle {

@@ -28,10 +28,20 @@ html{
         "header header"
         "section aside"
         "footer footer";
-    grid-template-columns: 56.5% auto;
+    grid-template-columns: 56.5 auto;
     grid-template-rows: 740px auto 189px;
-    grid-column-gap: 98px;
 }
+
+#grid__oneColumn {
+    display: grid;
+    grid-template-areas:
+        "header__oneColumn"
+        "section__oneColumn"
+        "footer__oneColumn";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 189px;
+}
+
 
 h2 {
     font-family: $tipografiaRoboto;

@@ -1,24 +1,25 @@
 #section__masVendidos {
+    grid-area: section__oneColumn;
     width: 884px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 41px;
     margin-bottom: 107px;
+    transition: all 1s;
 }
 
 .section__video {
     @include sizes(367px, 232px);
-    display: inline-block;
     border-radius: $borderRadiusGrande;
     margin-top: 72px;
 }
 
 .section__description--masVendidos {
-    @include sizes(476px, 232px);
+    @include sizes(476px, auto);
     border-radius: $borderRadiusGrande;
     background-color: $colorCuaternario;
     margin-top: 72px;
-    margin-left: auto;
+    margin-left: 41px;
     padding-left: 38px;
     padding-top: 29px;
 }

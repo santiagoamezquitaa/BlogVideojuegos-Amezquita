@@ -1,6 +1,13 @@
 .header__image{
     grid-area: header;
-    background-image: url('../imagenes/zelda-paisaje-xl.jpg');
+    background: url('../imagenes/zelda-paisaje-xl.jpg') no-repeat center;
+    @include sizes(100%, 70.2rem);
+    background-size: cover; 
+}
+
+.header__image--oneColumn{
+    grid-area: header__oneColumn;
+    background: url('../imagenes/zelda-paisaje-xl.jpg') no-repeat center;
     @include sizes(100%, 70.2rem);
     background-size: cover; 
 }
