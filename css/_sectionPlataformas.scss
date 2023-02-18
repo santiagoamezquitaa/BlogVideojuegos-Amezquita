@@ -1,9 +1,11 @@
 #section__plataformas {
+    grid-area: section__oneColumn;
     width: 941px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 41px;
     margin-bottom: 107px;
+    transition: all 1s;
 }
 
 .section__h2--plataformas {
@@ -12,9 +14,15 @@
 }
 
 .section__image--plataformas {
-    background-image: url('../imagenes/amd_promo.png');
-    @include sizes(441px, 280px);
     margin-top: 72px;
+}
+
+.section__image--plataformas--reverse {
+    @extend .section__image--plataformas;
+}
+
+.image--plataformas {
+    @include sizes(441px, 280px);
     border-top-left-radius: $borderRadiusGrande;
     border-bottom-left-radius: $borderRadiusGrande;
 }
@@ -39,11 +47,12 @@
     font-size: 1.2rem;
     text-align: center;
 }
+
 .section__h3--plataformas {
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 79px;
-    @include sizes(381px, auto);
+    @include sizes(auto, auto);
 }
 
 .section__p--plataformas {
@@ -51,7 +60,7 @@
     margin-top: 8px;
     margin-right: 20px;
     margin-bottom: 21px;
-    @include sizes(440px, auto);
+    @include sizes(auto, auto);
 }
 
 .section__description--plataformas--reverse {
@@ -69,19 +78,18 @@
 }
 
 .h3--reverse {
+    margin-right: 0px;
     margin-left: 79px;
     text-align: right;
 }
 
 .p--reverse {
+    margin-right: 0px;
     margin-left: 20px;
     text-align: right;
 }
 
-.section__image--plataformas--reverse {
-    @extend .section__image--plataformas;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: $borderRadiusGrande;
-    border-bottom-right-radius: $borderRadiusGrande;
+.image--plataformas--reverse {
+    @extend .image--plataformas;
+    border-radius: 0px $borderRadiusGrande $borderRadiusGrande 0px;
 }

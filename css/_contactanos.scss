@@ -1,22 +1,28 @@
 #section__contactanos {
+    grid-area: section__oneColumn;
     width: 943px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 41px;
     margin-bottom: 107px;
+    transition: all 1s;
 }
 
 .section__image--contact {
-    background-image: url('../imagenes/email.png');
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.section__image--contactEmail {
     @include sizes(512px, 512px);
-    margin-top: 110px;
-    margin-bottom: 110px;
+    transition: all 1s;
 }
 
 .section__form{
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
+    transition: all 1s;
 }
 
 .input__contactUs {
@@ -26,10 +32,12 @@
     margin-top: 20px;
     border-style: none;
     font-size: 1.6rem;
+    transition: all 1s;
 }
 
 .input__contactUs--textArea {
     height: 203px;
+    transition: all 1s;
 }
 
 .buttons__form {
@@ -50,4 +58,5 @@
 .mb-3 {
     display: flex;
     justify-content: space-between;
+    transition: all 1s;
 }

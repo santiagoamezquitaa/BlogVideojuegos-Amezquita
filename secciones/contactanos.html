@@ -16,7 +16,10 @@
 </head>
 
 <body>
-    <header class="header__image">
+
+    <div id="grid__oneColumn">
+
+    <header class="header__image--oneColumn">
         <div class="header__socialMedia">
             <ul class="header__socialMedia--nav">
                 <li>
@@ -90,8 +93,11 @@
 
     <section id="section__contactanos">
         <h2 class="section__h2">CONTÁCTANOS</h2>
-        <div class="section__container">
-            <div class="section__image--contact" data-aos="zoom-in"></div>
+        <div class="section__container container__contact">
+            <div class="section__image--contact" data-aos="zoom-in">
+                <img src="../imagenes/email.png" alt="email-contactanos" class="section__image--contactEmail">
+            </div>
+            
             <div class="section__form" data-aos="zoom-in-left">
                 <form action="" method="get" enctype="multipart/form-data">
                     <div class="mb-3">
@@ -126,7 +132,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer__oneColumn">
         <div class="footer__logoTittle">
             <img src="../imagenes/Kingdom-footer.png" alt="logo-titulo">
         </div>
@@ -135,6 +141,9 @@
         </div>
         <p class="footer__message">2023 - Desarrollado en mi curso de desarrollo web</p>
     </footer>
+
+    </div>
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

@@ -1,9 +1,10 @@
 .aside__index {
     grid-area: aside;
     width: 290px;
-    margin-left: 48px;
+    margin-left: 4%;
     margin-right: auto;
     margin-top: 41px;
+    transition: all 1s;
 }
 
 .aside__container--index {
