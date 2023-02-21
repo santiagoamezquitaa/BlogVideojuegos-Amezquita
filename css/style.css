@@ -199,16 +199,18 @@ h3 {
 }
 
 .section__image--index {
-  background-image: url("../imagenes/capcom.png");
+  margin-top: 72px;
+}
+
+.image--index {
   width: 264px;
   height: 167px;
-  margin-top: 72px;
   border-radius: 14px;
 }
 
 .section__description--index {
   width: 264px;
-  height: 167px;
+  height: auto;
   border-radius: 14px;
   background-color: #F4F6FF;
   margin-top: 72px;
@@ -245,10 +247,7 @@ h3 {
   margin-top: 72px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 8px;
-  padding-bottom: 8px;
-  padding-right: 8px;
-  padding-top: 8px;
+  padding: 8px 8px 8px 8px;
 }
 
 .aside__ranking {
@@ -332,12 +331,18 @@ footer {
   width: 175px;
   height: 28px;
   background-color: #EA907A;
-  text-align: center;
   border-radius: 0.6rem;
-  font-weight: bold;
-  font-size: 0.9rem;
   border: 2px;
   border-style: solid;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.footer__contributions--p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 
 .footer__message {
@@ -394,12 +399,15 @@ footer {
   border-radius: 6px;
   margin-left: auto;
   margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
 }
 
 .section__p--masVendidos--precio {
   font-size: 1.5rem;
-  margin-top: 23px;
-  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 
 #section__plataformas {
@@ -523,12 +531,14 @@ footer {
 }
 
 .section__image--ofertas {
-  background-image: url("../imagenes/fifa23.png");
+  margin-top: 10px;
+}
+
+.image--ofertas {
   width: 343px;
   height: 217px;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
-  margin-top: 10px;
 }
 
 .section__description--ofertas {
@@ -542,7 +552,7 @@ footer {
 }
 
 .section__p--ofertas {
-  width: 73px;
+  width: auto;
   height: 23px;
   font-size: 1.8rem;
   font-weight: bold;
@@ -579,12 +589,14 @@ footer {
 }
 
 .aside__image--gratuitos {
-  background-image: url("../imagenes/fortnite.png");
+  margin-top: 10px;
+}
+
+.image--gratuitos {
   width: 343px;
   height: 217px;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
-  margin-top: 10px;
 }
 
 .aside__description--gratuitos {
@@ -725,10 +737,11 @@ footer {
     transition: all 1s;
   }
   .section__image--index {
-    background-image: url("../imagenes/capcom.png");
+    margin-top: 0px;
+  }
+  .image--index {
     width: 245px;
     height: 134px;
-    margin-top: 0px;
     border-radius: 0px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
@@ -736,8 +749,7 @@ footer {
   }
   .section__description--index {
     width: 245px;
-    height: 124px;
-    background-color: #F4F6FF;
+    height: auto;
     margin-top: 0px;
     margin-left: 0px;
     padding-left: 19px;
@@ -749,38 +761,24 @@ footer {
   }
   .section__h3--index {
     font-size: 1.25rem;
-    font-weight: bold;
-    width: 207px;
+    width: auto;
     transition: all 1s;
   }
   .section__p--index {
     font-size: 0.8rem;
-    width: 195px;
+    width: auto;
     height: auto;
-    margin-top: 6px;
-    margin-right: 33px;
     transition: all 1s;
   }
   .aside__index {
     grid-area: aside;
-    width: 290px;
     margin-left: auto;
-    margin-right: auto;
     margin-top: 60px;
     margin-bottom: 60px;
     transition: all 1s;
   }
   .aside__container--index {
-    background-color: #FFCB74;
-    width: 245px;
-    border-radius: 14px;
     margin-top: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 8px;
-    padding-bottom: 8px;
-    padding-right: 8px;
-    padding-top: 8px;
     transition: all 1s;
   }
   /* OFERTAS Y GRATUITOS*/
@@ -967,10 +965,11 @@ footer {
     transition: all 1s;
   }
   .section__image--index {
-    background-image: url("../imagenes/capcom.png");
+    margin-top: 0px;
+  }
+  .image--index {
     width: 245px;
     height: 134px;
-    margin-top: 0px;
     border-radius: 0px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
@@ -978,8 +977,7 @@ footer {
   }
   .section__description--index {
     width: 245px;
-    height: 124px;
-    background-color: #F4F6FF;
+    height: auto;
     margin-top: 0px;
     margin-left: 0px;
     padding-left: 19px;
@@ -991,38 +989,24 @@ footer {
   }
   .section__h3--index {
     font-size: 1.25rem;
-    font-weight: bold;
-    width: 207px;
+    width: auto;
     transition: all 1s;
   }
   .section__p--index {
     font-size: 0.8rem;
-    width: 195px;
+    width: auto;
     height: auto;
-    margin-top: 6px;
-    margin-right: 33px;
     transition: all 1s;
   }
   .aside__index {
     grid-area: aside;
-    width: 290px;
     margin-left: 4%;
-    margin-right: auto;
     margin-top: 28px;
     margin-bottom: auto;
     transition: all 1s;
   }
   .aside__container--index {
-    background-color: #FFCB74;
-    width: 245px;
-    border-radius: 14px;
     margin-top: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 8px;
-    padding-bottom: 8px;
-    padding-right: 8px;
-    padding-top: 8px;
     transition: all 1s;
   }
   /* MAS VENDIDOS */
@@ -1195,10 +1179,11 @@ footer {
     transition: all 1s;
   }
   .section__image--index {
-    background-image: url("../imagenes/capcom.png");
+    margin-top: 0px;
+  }
+  .image--index {
     width: 245px;
     height: 134px;
-    margin-top: 0px;
     border-radius: 0px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
@@ -1206,8 +1191,7 @@ footer {
   }
   .section__description--index {
     width: 245px;
-    height: 124px;
-    background-color: #F4F6FF;
+    height: auto;
     margin-top: 0px;
     margin-left: 0px;
     padding-left: 19px;
@@ -1219,38 +1203,24 @@ footer {
   }
   .section__h3--index {
     font-size: 1.25rem;
-    font-weight: bold;
-    width: 207px;
+    width: auto;
     transition: all 1s;
   }
   .section__p--index {
     font-size: 0.8rem;
-    width: 195px;
+    width: auto;
     height: auto;
-    margin-top: 6px;
-    margin-right: 33px;
     transition: all 1s;
   }
   .aside__index {
     grid-area: aside;
-    width: 290px;
     margin-left: 4%;
-    margin-right: auto;
     margin-top: 28px;
     margin-bottom: auto;
     transition: all 1s;
   }
   .aside__container--index {
-    background-color: #FFCB74;
-    width: 245px;
-    border-radius: 14px;
     margin-top: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 8px;
-    padding-bottom: 8px;
-    padding-right: 8px;
-    padding-top: 8px;
     transition: all 1s;
   }
   /* Mas Vendidos */

@@ -84,10 +84,12 @@
     }
 
     .section__image--index {
-        background-image: url('../imagenes/capcom.png');
+        margin-top: 0px;
+    }
+
+    .image--index {
         width: 245px;
         height: 134px;
-        margin-top: 0px;
         border-radius: 0px;
         border-top-left-radius: $borderRadiusGrande;
         border-top-right-radius: $borderRadiusGrande;
@@ -96,8 +98,7 @@
     
     .section__description--index{
         width: 245px;
-        height: 124px;
-        background-color: #F4F6FF;
+        height: auto;
         margin-top: 0px;
         margin-left: 0px;
         padding-left: 19px;
@@ -110,41 +111,27 @@
     
     .section__h3--index {
         font-size: 1.25rem;
-        font-weight: bold;
-        width: 207px;
+        width: auto;
         transition: all 1s;
     }
     
     .section__p--index {
         font-size: 0.8rem;
-        width: 195px;
+        width: auto;
         height: auto;
-        margin-top: 6px;
-        margin-right: 33px;
         transition: all 1s;
     }
 
     .aside__index {
         grid-area: aside;
-        width: 290px;
         margin-left: auto;
-        margin-right: auto;
         margin-top: 60px;
         margin-bottom: 60px;
         transition: all 1s;
     }
     
     .aside__container--index {
-        background-color: $colorSecundario;
-        width: 245px;
-        border-radius: $borderRadiusGrande;
         margin-top: 24px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 8px;
-        padding-bottom: 8px;
-        padding-right: 8px;
-        padding-top: 8px;
         transition: all 1s;
     }
     
@@ -375,10 +362,12 @@
     }
 
     .section__image--index {
-        background-image: url('../imagenes/capcom.png');
+        margin-top: 0px;
+    }
+
+    .image--index {
         width: 245px;
         height: 134px;
-        margin-top: 0px;
         border-radius: 0px;
         border-top-left-radius: $borderRadiusGrande;
         border-top-right-radius: $borderRadiusGrande;
@@ -387,8 +376,7 @@
     
     .section__description--index{
         width: 245px;
-        height: 124px;
-        background-color: #F4F6FF;
+        height: auto;
         margin-top: 0px;
         margin-left: 0px;
         padding-left: 19px;
@@ -401,41 +389,27 @@
     
     .section__h3--index {
         font-size: 1.25rem;
-        font-weight: bold;
-        width: 207px;
+        width: auto;
         transition: all 1s;
     }
     
     .section__p--index {
         font-size: 0.8rem;
-        width: 195px;
+        width: auto;
         height: auto;
-        margin-top: 6px;
-        margin-right: 33px;
         transition: all 1s;
     }
 
     .aside__index {
         grid-area: aside;
-        width: 290px;
         margin-left: 4%;
-        margin-right: auto;
         margin-top: 28px;
         margin-bottom: auto;
         transition: all 1s;
     }
     
     .aside__container--index {
-        background-color: $colorSecundario;
-        width: 245px;
-        border-radius: $borderRadiusGrande;
         margin-top: 24px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 8px;
-        padding-bottom: 8px;
-        padding-right: 8px;
-        padding-top: 8px;
         transition: all 1s;
     }
 
@@ -651,10 +625,12 @@
     }
 
     .section__image--index {
-        background-image: url('../imagenes/capcom.png');
+        margin-top: 0px;
+    }
+
+    .image--index {
         width: 245px;
         height: 134px;
-        margin-top: 0px;
         border-radius: 0px;
         border-top-left-radius: $borderRadiusGrande;
         border-top-right-radius: $borderRadiusGrande;
@@ -663,8 +639,7 @@
     
     .section__description--index{
         width: 245px;
-        height: 124px;
-        background-color: #F4F6FF;
+        height: auto;
         margin-top: 0px;
         margin-left: 0px;
         padding-left: 19px;
@@ -677,41 +652,27 @@
     
     .section__h3--index {
         font-size: 1.25rem;
-        font-weight: bold;
-        width: 207px;
+        width: auto;
         transition: all 1s;
     }
     
     .section__p--index {
         font-size: 0.8rem;
-        width: 195px;
+        width: auto;
         height: auto;
-        margin-top: 6px;
-        margin-right: 33px;
         transition: all 1s;
     }
 
     .aside__index {
         grid-area: aside;
-        width: 290px;
         margin-left: 4%;
-        margin-right: auto;
         margin-top: 28px;
         margin-bottom: auto;
         transition: all 1s;
     }
     
     .aside__container--index {
-        background-color: $colorSecundario;
-        width: 245px;
-        border-radius: $borderRadiusGrande;
         margin-top: 24px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 8px;
-        padding-bottom: 8px;
-        padding-right: 8px;
-        padding-top: 8px;
         transition: all 1s;
     }
 

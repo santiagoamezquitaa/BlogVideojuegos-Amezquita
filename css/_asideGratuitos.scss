@@ -9,12 +9,14 @@
 }
 
 .aside__image--gratuitos {
-    background-image: url('../imagenes/fortnite.png');
+    margin-top: 10px;
+}
+
+.image--gratuitos {
     width: map-get($estilosOfertasGratuitos, width-image-description);
     height: map-get($estilosOfertasGratuitos, height-image);
     border-top-left-radius: $borderRadiusGrande;
     border-top-right-radius: $borderRadiusGrande;
-    margin-top: 10px;
 }
 
 .aside__description--gratuitos {

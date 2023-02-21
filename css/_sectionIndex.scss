@@ -6,16 +6,18 @@
 }
 
 .section__image--index {
-    background-image: url('../imagenes/capcom.png');
+    margin-top: 72px;
+}
+
+.image--index {
     width: map-get($estilosSectionIndex, width);
     height: map-get($estilosSectionIndex, height);
-    margin-top: 72px;
-    border-radius: $borderRadiusGrande;
+    border-radius: $borderRadiusGrande;    
 }
 
 .section__description--index{
     width: map-get($estilosSectionIndex, width);
-    height: map-get($estilosSectionIndex, height);
+    height: auto;
     border-radius: $borderRadiusGrande;
     background-color: $colorCuaternario;
     margin-top: 72px;

@@ -27,12 +27,14 @@
 }
 
 .section__image--ofertas {
-    background-image: url('../imagenes/fifa23.png');
+    margin-top: 10px;
+}
+
+.image--ofertas {
     width: map-get($estilosOfertasGratuitos, width-image-description);
     height: map-get($estilosOfertasGratuitos, height-image);
     border-top-left-radius: $borderRadiusGrande;
     border-top-right-radius: $borderRadiusGrande;
-    margin-top: 10px;
 }
 
 .section__description--ofertas {
@@ -46,7 +48,7 @@
 }
 
 .section__p--ofertas {
-    @include sizes(73px, 23px);
+    @include sizes(auto, 23px);
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: auto;

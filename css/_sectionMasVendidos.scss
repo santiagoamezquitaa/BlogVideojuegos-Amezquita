@@ -41,10 +41,13 @@
     border-radius: 6px;
     margin-left: auto;
     margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
 }
 
 .section__p--masVendidos--precio {
     font-size: 1.5rem;
-    margin-top: 23px;
-    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0px;
 }
